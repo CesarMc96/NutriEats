@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NutriEats</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="usuario">Usuario</string>
+</resources>
