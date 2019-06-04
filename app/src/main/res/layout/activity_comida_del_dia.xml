@@ -18,13 +18,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="69dp" />
+        tools:layout_editor_absoluteY="69dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="286dp"
         android:layout_height="220dp"
-        app:srcCompat="@drawable/comida0dia"
+        android:background="@drawable/comida$dia"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="63dp"
         tools:layout_editor_absoluteY="159dp" />
 
@@ -34,7 +36,8 @@
         android:layout_height="wrap_content"
         android:text="Home"
         tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="589dp" />
+        tools:layout_editor_absoluteY="589dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button2"
@@ -42,5 +45,6 @@
         android:layout_height="wrap_content"
         android:text="Aceptar"
         tools:layout_editor_absoluteX="260dp"
-        tools:layout_editor_absoluteY="589dp" />
+        tools:layout_editor_absoluteY="589dp"
+        tools:ignore="MissingConstraints" />
 </android.support.constraint.ConstraintLayout>
