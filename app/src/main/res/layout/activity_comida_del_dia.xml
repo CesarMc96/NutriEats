@@ -24,7 +24,7 @@
         android:id="@+id/imageView3"
         android:layout_width="286dp"
         android:layout_height="220dp"
-        app:srcCompat="@drawable/ComidaDia"
+        app:srcCompat="@drawable/comida0dia"
         tools:layout_editor_absoluteX="63dp"
         tools:layout_editor_absoluteY="159dp" />
 

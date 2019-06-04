@@ -10,7 +10,7 @@
         android:id="@+id/imageView"
         android:layout_width="219dp"
         android:layout_height="440dp"
-        app:srcCompat="@drawable/Avatar"
+        app:srcCompat="@drawable/avatar"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="60dp" />
 
@@ -44,7 +44,7 @@
         android:id="@+id/imageView6"
         android:layout_width="52dp"
         android:layout_height="42dp"
-        app:srcCompat="@drawable/CONF"
+        app:srcCompat="@drawable/conf"
         tools:layout_editor_absoluteX="325dp"
         tools:layout_editor_absoluteY="570dp" />
 

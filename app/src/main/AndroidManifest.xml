@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TuDieta"></activity>
+        <activity android:name=".Dieta"></activity>
+        <activity android:name=".TuDieta" />
         <activity android:name=".ComidaDelDia" />
         <activity android:name=".LoginActivity">
             <intent-filter>
