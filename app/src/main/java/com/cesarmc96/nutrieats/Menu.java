@@ -17,6 +17,7 @@ public class Menu extends AppCompatActivity {
     RadioButton radioComida;
     RadioButton radioCena;
     Cursor cursor;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +33,7 @@ public class Menu extends AppCompatActivity {
         btnBuscar.setOnClickListener(new View.OnClickListener() {
             SQLiteDatabase base = bd.getReadableDatabase();
 
-            cursor = base.rawQuery("Select tipo from comidas",null);
+            //cursor = base.rawQuery("Select tipo from comidas",null);
 
             @Override
             public void onClick(View v) {

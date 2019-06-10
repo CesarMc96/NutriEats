@@ -59,7 +59,7 @@ public class ListaTarjeta extends AppCompatActivity {
     }
 
     public void editarTarjeta(){
-        Intent i = new Intent(getApplicationContext(), AgregarTarjeta.class);
+        Intent i = new Intent(getApplicationContext(), EditarTarjeta.class);
         i.putExtra("tarjeta", tar);
         startActivity(i);
     }

@@ -18,7 +18,7 @@ public class Perfil extends AppCompatActivity {
     String nombre;
     Cursor cursor;
     String email;
-    Button btnCerrar, btnDieta, btnObjetivos, btnDireccion, btnPago, btnEditar;
+    Button btnCerrar, btnDieta, btnObjetivos, btnDireccion, btnPago, btnEditar, btnHome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +33,7 @@ public class Perfil extends AppCompatActivity {
         btnDireccion = findViewById(R.id.btnDireccion);
         btnEditar = findViewById(R.id.btnEditar);
         btnPago = findViewById(R.id.btnPago);
+        btnHome =findViewById(R.id.button8);
         email = getIntent().getStringExtra("email");
 
         final ConexionBD bd = new ConexionBD(this);
@@ -54,6 +55,14 @@ public class Perfil extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), EditarUsuario.class);
                 i.putExtra("email", email);
+                startActivity(i);
+            }
+        });
+
+        btnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), MenuPrincipal.class);
                 startActivity(i);
             }
         });

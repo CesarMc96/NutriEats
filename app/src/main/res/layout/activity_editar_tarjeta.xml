@@ -39,6 +39,7 @@
         android:layout_marginBottom="56dp"
         android:ems="10"
         android:inputType="number"
+        android:maxLength="16"
         android:textColor="#4CAF50"
         app:layout_constraintBottom_toTopOf="@+id/textView28"
         app:layout_constraintStart_toEndOf="@+id/imageView2" />
