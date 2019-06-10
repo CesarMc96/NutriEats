@@ -74,8 +74,8 @@ public class Menu extends AppCompatActivity {
 
                                 if (contador==1){
 
-                                    String nombreR= cursor.getString(0);
-                                    String precioR = cursor.getString(1);
+                                    String nombreRR= cursor.getString(0);
+                                    String precioRR = cursor.getString(1);
                                     comidaU.setText(nombreR);
                                     precioU.setText(precioR);
                                 } else {
