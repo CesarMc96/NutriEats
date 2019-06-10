@@ -52,15 +52,15 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="93dp"
         android:layout_marginStart="93dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="93dp"
         android:text="Comidas Disponibles"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton5"
+        app:layout_constraintTop_toBottomOf="@+id/radioCo"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -68,33 +68,33 @@
         android:layout_width="wrap_content"
         android:layout_height="51dp"
         android:text="Menús disponibles"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="30dp"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="36dp"
         tools:textSize="30sp" />
 
     <RadioButton
-        android:id="@+id/radioButton4"
+        android:id="@+id/radioD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Desayunos"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="107dp" />
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="97dp" />
 
     <RadioButton
-        android:id="@+id/radioButton5"
+        android:id="@+id/radioCo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Comidas"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="107dp" />
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="97dp" />
 
     <RadioButton
-        android:id="@+id/radioButton6"
+        android:id="@+id/radioCe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cenas"
-        tools:layout_editor_absoluteX="232dp"
-        tools:layout_editor_absoluteY="107dp" />
+        tools:layout_editor_absoluteX="259dp"
+        tools:layout_editor_absoluteY="97dp" />
 
     <Button
         android:id="@+id/button5"
@@ -111,6 +111,14 @@
         android:text="Agregar"
         tools:layout_editor_absoluteX="46dp"
         tools:layout_editor_absoluteY="364dp" />
+
+    <Button
+        android:id="@+id/btnBuscarM"
+        android:layout_width="81dp"
+        android:layout_height="35dp"
+        android:text="Buscar"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="138dp" />
 
 
 </android.support.constraint.ConstraintLayout>
