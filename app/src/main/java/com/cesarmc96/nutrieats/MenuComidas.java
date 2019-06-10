@@ -26,8 +26,7 @@ public class MenuComidas extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-
-        btnBuscar = findViewById(R.id.btnBuscarM);
+    btnBuscar = findViewById(R.id.btnBuscarM);
         radioDesayuno = findViewById(R.id.radioD);
         radioComida = findViewById(R.id.radioCo);
         radioCena = findViewById(R.id.radioCe);
@@ -41,10 +40,10 @@ public class MenuComidas extends AppCompatActivity {
         btnBuscar.setOnClickListener(new View.OnClickListener() {
             SQLiteDatabase base = bd.getReadableDatabase();
             Integer contador = 1;
-            /*
+
             String cena = "cena";
             String comida= "comida";
-            String desayuno= "desayuno";*/
+            String desayuno= "desayuno";
             @Override
             public void onClick(View v) {
                 if (radioDesayuno.isChecked()== true){

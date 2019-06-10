@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".menuActivity">
+    tools:context=".MenuComidas">
 
     <TextView
         android:id="@+id/textComidaUno"
@@ -14,136 +14,156 @@
         android:layout_marginEnd="30dp"
         android:text="---"
         app:layout_constraintEnd_toStartOf="@+id/textComidaDos"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.031"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="345dp" />
+        tools:layout_editor_absoluteY="389dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textComidaDos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="132dp"
+        android:layout_marginEnd="148dp"
         android:text="----"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="345dp" />
+        tools:layout_editor_absoluteY="389dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="110dp"
         android:layout_height="66dp"
-        android:layout_marginEnd="80dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/comidados"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="264dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textComidaDos"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="117dp"
         android:layout_height="72dp"
-        android:layout_marginEnd="64dp"
         android:layout_marginStart="36dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/comidauno"
+        app:layout_constraintBottom_toTopOf="@+id/textComidaUno"
         app:layout_constraintEnd_toStartOf="@+id/button6"
-        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintHorizontal_bias="0.092"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="258dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="93dp"
-        android:layout_marginTop="64dp"
         android:layout_marginEnd="93dp"
+        android:layout_marginBottom="24dp"
         android:text="Comidas Disponibles"
         android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.734"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioCo"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="51dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="24dp"
         android:text="Menús disponibles"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/radioD"
+        app:layout_constraintStart_toStartOf="parent"
         tools:textSize="30sp" />
 
     <RadioButton
         android:id="@+id/radioD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="48dp"
         android:text="Desayunos"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="97dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <RadioButton
         android:id="@+id/radioCo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="48dp"
         android:text="Comidas"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="97dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/radioD" />
 
     <RadioButton
         android:id="@+id/radioCe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="48dp"
         android:text="Cenas"
-        tools:layout_editor_absoluteX="259dp"
-        tools:layout_editor_absoluteY="97dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintStart_toEndOf="@+id/radioCo" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="83dp"
         android:layout_height="35dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="24dp"
         android:text="Agregar"
-        tools:layout_editor_absoluteX="230dp"
-        tools:layout_editor_absoluteY="379dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnConCm"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="83dp"
         android:layout_height="35dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="188dp"
         android:text="Agregar"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="379dp" />
-
-    <Button
-        android:id="@+id/btnBuscarM"
-        android:layout_width="81dp"
-        android:layout_height="35dp"
-        android:text="Buscar"
-        tools:layout_editor_absoluteX="158dp"
-        tools:layout_editor_absoluteY="138dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/btnConCm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="116dp"
         android:text="Confirmar"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="480dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textPrecioU"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="---"
-        tools:layout_editor_absoluteX="81dp"
-        tools:layout_editor_absoluteY="345dp" />
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="389dp" />
 
     <TextView
         android:id="@+id/textPrecioD"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="---"
-        tools:layout_editor_absoluteX="290dp"
-        tools:layout_editor_absoluteY="345dp" />
+        tools:layout_editor_absoluteX="312dp"
+        tools:layout_editor_absoluteY="389dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnBuscarM"
+        android:layout_width="81dp"
+        android:layout_height="35dp"
+        android:text="Buscar"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="218dp"
+        tools:ignore="MissingConstraints" />
 
 
 </android.support.constraint.ConstraintLayout>
