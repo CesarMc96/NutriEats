@@ -63,6 +63,7 @@ public class Perfil extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), MenuPrincipal.class);
+                i.putExtra("email",email);
                 startActivity(i);
             }
         });

@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import BaseDatos.ConexionBD;
 
-public class Menu extends AppCompatActivity {
+public class MenuComidas extends AppCompatActivity {
     Button btnBuscar;
     RadioButton radioDesayuno;
     RadioButton radioComida;
@@ -76,8 +76,8 @@ public class Menu extends AppCompatActivity {
 
                                     String nombreRR= cursor.getString(0);
                                     String precioRR = cursor.getString(1);
-                                    comidaU.setText(nombreR);
-                                    precioU.setText(precioR);
+                                    comidaU.setText(nombreRR);
+                                    precioU.setText(precioRR);
                                 } else {
                                     String nombreR= cursor.getString(0);
                                     String precioR = cursor.getString(1);

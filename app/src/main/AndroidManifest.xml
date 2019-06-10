@@ -29,6 +29,7 @@
         <activity android:name=".MenuPrincipal" />
         <activity android:name=".Pedidos" />
         <activity android:name=".Objetivos" />
+        <activity android:name=".MenuComidas"/>
     </application>
 
 </manifest>
