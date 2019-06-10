@@ -22,8 +22,8 @@
         style="@style/Widget.AppCompat.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="36dp"
         android:text="Perfil"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -32,21 +32,21 @@
         android:id="@+id/btnComidas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="29dp"
+        android:layout_marginBottom="32dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginStart="29dp"
         android:text="comidas"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnPedidos"
-        app:layout_constraintHorizontal_bias="0.382"
+        app:layout_constraintHorizontal_bias="0.285"
         app:layout_constraintStart_toEndOf="@+id/btnPerfil" />
 
     <Button
         android:id="@+id/btnPedidos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="32dp"
         android:text="pedidos"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
