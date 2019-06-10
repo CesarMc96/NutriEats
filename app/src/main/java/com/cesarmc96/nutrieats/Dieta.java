@@ -8,7 +8,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TuDieta extends AppCompatActivity {
+public class Dieta extends AppCompatActivity {
 
     private ListView lista;
     private ArrayList<String> arreglo;

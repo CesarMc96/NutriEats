@@ -24,7 +24,9 @@ public class MenuPrincipal extends AppCompatActivity {
         btnPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String email = getIntent().getStringExtra("email");
                 Intent i = new Intent(getApplicationContext(), Perfil.class);
+                i.putExtra("email", email);
                 startActivity(i);
             }
         });
@@ -40,9 +42,14 @@ public class MenuPrincipal extends AppCompatActivity {
         btnPedidos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), TuDieta.class);
+                Intent i = new Intent(getApplicationContext(), Dieta.class);
                 startActivity(i);
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+
     }
 }

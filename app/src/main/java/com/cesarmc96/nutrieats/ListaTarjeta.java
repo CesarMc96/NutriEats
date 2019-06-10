@@ -3,11 +3,11 @@ package com.cesarmc96.nutrieats;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class ObjetivosActivity extends AppCompatActivity {
+public class ListaTarjeta extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_objetivos);
+        setContentView(R.layout.activity_lista_tarjeta);
     }
 }

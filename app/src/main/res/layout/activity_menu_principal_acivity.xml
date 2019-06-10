@@ -8,48 +8,38 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="405dp"
+        android:layout_height="258dp"
         android:layout_marginBottom="42dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logosolo" />
-
-    <Button
-        android:id="@+id/btnPerfil"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:layout_marginStart="36dp"
-        android:text="Perfil"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:srcCompat="@drawable/ensal1" />
 
     <Button
         android:id="@+id/btnComidas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginStart="29dp"
-        android:text="comidas"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnPedidos"
-        app:layout_constraintHorizontal_bias="0.285"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="88dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/comida"
+        android:backgroundTint="#4CAF50"
+        app:layout_constraintBottom_toTopOf="@+id/textView24"
         app:layout_constraintStart_toEndOf="@+id/btnPerfil" />
 
     <Button
         android:id="@+id/btnPedidos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:layout_marginEnd="32dp"
-        android:text="pedidos"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="75dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/pedidos"
+        android:backgroundTint="#4CAF50"
+        app:layout_constraintBottom_toTopOf="@+id/textView25"
+        app:layout_constraintStart_toEndOf="@+id/btnComidas" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -57,11 +47,67 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="624dp"
+        android:layout_marginBottom="548dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/nombre" />
+        app:srcCompat="@drawable/nombre2" />
+
+    <Button
+        android:id="@+id/btnPerfil"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="59dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/perfil"
+        android:backgroundTint="#4CAF50"
+        app:layout_constraintBottom_toTopOf="@+id/textView23"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="395dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="8dp"
+        android:background="#4CAF50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="61dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginBottom="36dp"
+        android:text="Perfil"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="87dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginBottom="36dp"
+        android:text="Comidas"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="77dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginBottom="36dp"
+        android:text="Pedidos"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView24" />
 
 </android.support.constraint.ConstraintLayout>

@@ -9,12 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Pago"></activity>
-        <activity android:name=".Configuracion" />
+        <activity android:name=".EditarUsuario"></activity>
+        <activity android:name=".Direccion" />
+        <activity android:name=".Pago" />
         <activity android:name=".ListaTarjetas" />
         <activity android:name=".RegistrarUsuario" />
-        <activity android:name=".CUDTarjeta" />
-        <activity android:name=".TuDieta" />
+        <activity android:name=".ListaTarjeta" />
+        <activity android:name=".Dieta" />
         <activity android:name=".ComidaDelDia" />
         <activity android:name=".Login">
             <intent-filter>
@@ -26,7 +27,7 @@
         <activity android:name=".Perfil" />
         <activity android:name=".MenuPrincipal" />
         <activity android:name=".Pedidos" />
-        <activity android:name=".ObjetivosActivity"></activity>
+        <activity android:name=".Objetivos" />
     </application>
 
 </manifest>

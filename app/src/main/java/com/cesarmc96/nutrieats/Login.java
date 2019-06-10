@@ -45,8 +45,12 @@ public class Login extends AppCompatActivity {
                     do {
                         if (email.equals(cursor.getString(0)) && contra.equals(cursor.getString(1))){
                             Intent i = new Intent(getApplicationContext(), MenuPrincipal.class);
+                            i.putExtra("email",email);
                             startActivity(i);
-                        }
+                        } /*else {
+                            Toast toast1 = Toast.makeText(getApplicationContext(),"Error usuario/contraseña", Toast.LENGTH_SHORT);
+                            toast1.show();
+                        }*/
                     }
                     while(cursor.moveToNext());
                 }
@@ -60,5 +64,10 @@ public class Login extends AppCompatActivity {
                 startActivity(i);
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+
     }
 }
