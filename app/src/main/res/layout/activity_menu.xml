@@ -68,8 +68,8 @@
         android:layout_width="wrap_content"
         android:layout_height="51dp"
         android:text="Menús disponibles"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="30dp"
+        tools:layout_editor_absoluteX="80dp"
+        tools:layout_editor_absoluteY="36dp"
         tools:textSize="30sp" />
 
     <RadioButton
