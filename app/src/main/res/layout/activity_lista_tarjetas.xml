@@ -4,6 +4,79 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListaTarjetas">
+    tools:context=".AgregarTarjeta">
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="224dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Agregar Tarjeta"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="monospace"
+        android:foregroundTint="#00000000"
+        android:text="Mis Tarjetas"
+        android:textColor="#4CAF50"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnTarjeta2"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/visa"
+        app:layout_constraintBottom_toTopOf="@+id/btnAgregar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnTarjeta1"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/master"
+        app:layout_constraintBottom_toTopOf="@+id/btnTarjeta2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnTarjeta21"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="92dp"
+        android:text="**** 0594"
+        app:layout_constraintBottom_toTopOf="@+id/btnAgregar"
+        app:layout_constraintStart_toEndOf="@+id/btnTarjeta2" />
+
+    <Button
+        android:id="@+id/btnTarjeta12"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="60dp"
+        android:text="**** 1118"
+        app:layout_constraintBottom_toTopOf="@+id/btnTarjeta21"
+        app:layout_constraintStart_toEndOf="@+id/btnTarjeta1" />
 
 </android.support.constraint.ConstraintLayout>

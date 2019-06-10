@@ -65,7 +65,7 @@ public class RegistrarUsuario extends AppCompatActivity {
 
         base.insert("usuarios", null,ct);
 
-        Toast toast1 = Toast.makeText(getApplicationContext(),"Usario Registrado", Toast.LENGTH_SHORT);
+        Toast toast1 = Toast.makeText(getApplicationContext(),"Usuario Registrado", Toast.LENGTH_SHORT);
         toast1.show();
 
         Intent i = new Intent(getApplicationContext(), Login.class);

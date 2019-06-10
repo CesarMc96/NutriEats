@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".EditarUsuario"></activity>
+        <activity android:name=".EditarTarjeta"></activity>
+        <activity android:name=".EditarUsuario" />
         <activity android:name=".Direccion" />
         <activity android:name=".Pago" />
-        <activity android:name=".ListaTarjetas" />
+        <activity android:name=".AgregarTarjeta" />
         <activity android:name=".RegistrarUsuario" />
         <activity android:name=".ListaTarjeta" />
         <activity android:name=".Dieta" />

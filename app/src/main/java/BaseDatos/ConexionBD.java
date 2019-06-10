@@ -16,13 +16,14 @@ public class ConexionBD extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("Create table usuarios(id integer primary key autoincrement,nombre text,apellidos text,telefono text, email text,contrasena text)");
-        db.execSQL("insert into usuarios values('a','a','12','c@hot.com','123')");
+        db.execSQL("Create table tarjetas(id integer primary key autoincrement, tarjeta text, fecha text, codigo text)");
     }
 
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("Create table usuarios(id integer primary key autoincrement,nombre text,apellidos text,telefono text, email text,contrasena text)");
+        db.execSQL("Create table tarjetas(id integer primary key autoincrement, tarjeta text, fecha text, codigo text)");
     }
 
 }

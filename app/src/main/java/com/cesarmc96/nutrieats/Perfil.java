@@ -19,6 +19,7 @@ public class Perfil extends AppCompatActivity {
     Cursor cursor;
     String email;
     Button btnCerrar, btnDieta, btnObjetivos, btnDireccion, btnPago, btnEditar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +48,15 @@ public class Perfil extends AppCompatActivity {
             }
             while(cursor.moveToNext());
         }
+
+        btnEditar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), EditarUsuario.class);
+                i.putExtra("email", email);
+                startActivity(i);
+            }
+        });
 
         btnCerrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -84,14 +94,6 @@ public class Perfil extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), ListaTarjeta.class);
-                startActivity(i);
-            }
-        });
-
-        btnEditar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), EditarUsuario.class);
                 startActivity(i);
             }
         });
