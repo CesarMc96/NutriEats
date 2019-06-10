@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ListaTarjetas"></activity>
+        <activity android:name=".Pago"></activity>
+        <activity android:name=".Configuracion" />
+        <activity android:name=".ListaTarjetas" />
         <activity android:name=".RegistrarUsuario" />
         <activity android:name=".CUDTarjeta" />
         <activity android:name=".TuDieta" />
