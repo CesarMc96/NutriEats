@@ -20,6 +20,8 @@
         </activity>
         <activity android:name=".Perfil" />
         <activity android:name=".MenuPrincipal" />
+        <activity android:name=".Pedidos" />
+        <activity android:name=".ObjetivosActivity"></activity>
     </application>
 
 </manifest>

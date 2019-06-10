@@ -40,7 +40,7 @@ public class MenuPrincipal extends AppCompatActivity {
         btnPedidos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), Perfil.class);
+                Intent i = new Intent(getApplicationContext(), TuDieta.class);
                 startActivity(i);
             }
         });
