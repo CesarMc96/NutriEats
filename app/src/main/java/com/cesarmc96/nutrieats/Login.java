@@ -14,6 +14,7 @@ public class Login extends AppCompatActivity {
     EditText editaUsuario;
     EditText editaContraseña;
     Button btnEnviar;
+    Button btnRegistrarme;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class Login extends AppCompatActivity {
         editaUsuario = findViewById(R.id.editUsuario);
         editaContraseña = findViewById(R.id.editContraseña);
         btnEnviar = findViewById(R.id.btn);
+        btnRegistrarme = findViewById(R.id.btnRegistrarse);
 
         btnEnviar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,6 +42,14 @@ public class Login extends AppCompatActivity {
                     Toast toast1 = Toast.makeText(getApplicationContext(),"Error usuario/contraseña", Toast.LENGTH_SHORT);
                     toast1.show();
                 }
+            }
+        });
+
+        btnRegistrarme.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), RegistrarUsuario.class);
+                startActivity(i);
             }
         });
     }
